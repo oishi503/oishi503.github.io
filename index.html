@@ -1,7 +1,259 @@
 <!DOCTYPE html>
-<html>
-<head><title>Oishi Bhattacharya</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oishi Bhattacharya | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
 <body>
-  <h1>Hello World</h1>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Oishi.</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="greeting">Hi, I'm</p>
+      <h1>Oishi Bhattacharya</h1>
+      <h2>AI/ML Developer & CS Student</h2>
+      <p class="tagline">I love learning by building — creating tools that make everyday life a little smoother.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="mailto:oishi.bhattacharya2023@iem.edu.in" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/profile.jpeg" alt="Oishi Bhattacharya" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      Hi, I'm Oishi Bhattacharya — a Computer Science undergraduate with a passion for Artificial Intelligence, Machine Learning, and full-stack development. I focus on building intelligent systems that solve real problems — from deep learning models for regional script recognition to LLM-powered tools that automate code reviews and mock interviews. 
+      I have completed an AI/ML internship with IBM SkillsBuild under Edunet Foundation, where I built and deployed a project called AI Interview Coach using Python, Groq API, and NLP. 
+      I'm always looking for opportunities at the intersection of AI and impactful product building.
+    </p>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>Languages</h4>
+        <div class="tags">
+          <span>Python</span><span>Java</span><span>C</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>AI / ML</h4>
+        <div class="tags">
+          <span>TensorFlow</span><span>CNN</span><span>NLP</span><span>Groq API</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Web & Tools</h4>
+        <div class="tags">
+          <span>FastAPI</span><span>Streamlit</span><span>HTML/CSS/JS</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Libraries</h4>
+        <div class="tags">
+          <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="assets/projects/interview-coach.png" alt="AI Interview Coach" />
+      <div class="card-body">
+        <h3>AI Interview Coach</h3>
+        <p>AI-powered mock interview platform with dynamic question generation, semantic similarity scoring, and resume-based personalization using Groq LLM and NLP.</p>
+        <div class="tags">
+          <span>Python</span><span>Streamlit</span><span>Groq API</span><span>NLP</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/AI-Interview-Coach" class="btn small" target="_blank">GitHub</a>
+          <a href="https://ai-interview-coach-9jmaema5qgzthtotl2ssh9.streamlit.app/" class="btn small outline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/code-review.png" alt="AI Code Review Agent" />
+      <div class="card-body">
+        <h3>AI Code Review Agent</h3>
+        <p>GitHub bot that auto-reviews Pull Requests using LLaMA 3.3 70B — detects bugs, security issues, and bad practices with severity ratings via FastAPI webhook pipeline.</p>
+        <div class="tags">
+          <span>Python</span><span>FastAPI</span><span>Groq API</span><span>GitHub API</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/code-review-agent" class="btn small" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <div class="project-card">
+      <img src="assets/projects/quill.png" alt="Quill Blogging App" />
+      <div class="card-body">
+        <h3>Quill — Blogging Platform</h3>
+        <p>Full-stack blogging platform with JWT auth, create/delete posts, dark/light mode, and protected routes. Built with React, Node.js, Prisma, and PostgreSQL.</p>
+        <div class="tags">
+          <span>React</span><span>Node.js</span><span>Prisma</span><span>PostgreSQL</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/quill-app" class="btn small" target="_blank">GitHub</a>
+          <a href="https://quill-app-indol.vercel.app" class="btn small outline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/job-tracker.png" alt="Job Application Tracker" />
+      <div class="card-body">
+        <h3>Job Application Tracker</h3>
+        <p>Full-stack app to manage job applications with status filtering (Applied, Interview, Offer, Rejected), JWT authentication, and full CRUD operations.</p>
+        <div class="tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/job-tracker-frontend-app" class="btn small" target="_blank">GitHub</a>
+          <a href="https://job-tracker-frontend-app-9een.vercel.app" class="btn small outline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/studio-y2k.png" alt="Studio Y2K" />
+      <div class="card-body">
+        <h3>Studio Y2K</h3>
+        <p>A static fashion landing page inspired by early 2000s aesthetics. Features a responsive shopping website using HTML and CSS with a focus on layout structure and visual consistency.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/studio-y2k-website" class="btn small" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/rock-paper-scissors.png" alt="Rock Paper Scissors" />
+      <div class="card-body">
+        <h3>Rock Paper Scissors</h3>
+        <p>Interactive browser-based game built with vanilla HTML, CSS, and JavaScript with score tracking and animated results.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/oishi503/rock-paper-scissors" class="btn small" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CERTIFICATIONS -->
+<section class="certifications" id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <span class="cert-issuer">Coursera</span>
+      <p>IBM Cybersecurity Analyst</p>
+      <span class="cert-date">Jan 2026</span>
+      <div>
+        <a href="https://coursera.org/share/a62db114da62d543072971e7605d144e" class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-issuer">Coursera</span>
+      <p>Google Foundations of Cybersecurity</p>
+      <span class="cert-date">Jan 2026</span>
+      <div>
+        <a href="https://coursera.org/share/4a768f4624f2d98a0432944c1fb43b37" class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-issuer">Coursera</span>
+      <p>Applied Cryptography Specialization</p>
+      <span class="cert-date">Oct 2025</span>
+      <div>
+        <a href="https://coursera.org/share/b748ce428fc20ee3d27bbb673237e14d" class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-issuer">LinkedIn</span>
+      <p>Data Science Foundations: Fundamentals</p>
+      <span class="cert-date">Apr 2026</span>
+      <div>
+        <a href="https://www.linkedin.com/learning/certificates/5d1979fe4d7f69a578dc9733f039693c2ce7d40c405b9fe271768ad61a53aec1?trk=share_certificate" class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-issuer">LinkedIn</span>
+      <p>Learning Data Analytics: Extending and Applying Core Knowledge</p>
+      <span class="cert-date">Apr 2026</span>
+      <div>
+        <a href="https://www.linkedin.com/learning/certificates/c4d9832d387c76abcafe3bf0626c01df4463197b5137a940e534963417f03de0?trk=share_certificate" class="cert-link" target="_blank">View Certificate →</a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-issuer">IBM SkillsBuild</span>
+      <span class="cert-sub-issuer">Edunet Foundation</span>
+      <p>Artificial Intelligence Fundamentals<br><span class="cert-issued-by">Issued by IBM SkillsBuild</span></p>
+      <span class="cert-date"> 2026</span>
+      <div>
+        <a href="https://www.credly.com/badges/fc93863f-955b-478e-b1fa-ca0ff42c7fdc/public_url" class="cert-link" target="_blank">View Badge →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="contact-desc">Looking for internships and interesting projects to collaborate on. Let's connect!</p>
+
+  <div class="contact-info">
+    <span>mail: <a href="mailto:oishibhattacharya04@gmail.com">oishibhattacharya04@gmail.com</a></span>
+  </div>
+
+  <div class="contact-links">
+    <a href="mailto:oishibhattacharya04@gmail.com" class="btn primary">Email Me</a>
+    <a href="https://www.linkedin.com/in/oishi-bhattacharya-/" class="btn secondary" target="_blank">LinkedIn</a>
+    <a href="https://github.com/oishi503" class="btn secondary" target="_blank">GitHub</a>
+    <a href="assets/Oishi BhattacharyaCV.pdf" class="btn secondary" download>Download CV</a>
+  </div>
+</section>
+
+  <footer>
+    <p>Designed & Built by Oishi Bhattacharya © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
