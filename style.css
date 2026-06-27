@@ -178,6 +178,7 @@ section {
 /* ABOUT */
 .about {
   background: #111;
+  text-align: justify;
 }
 
 .about-text {
